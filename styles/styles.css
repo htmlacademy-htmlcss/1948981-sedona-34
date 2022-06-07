@@ -13,6 +13,10 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
+
+  html {
+    height: 100%;
+  }
   
 body {
     font-family: "PT Sans", sans-serif;
@@ -20,12 +24,38 @@ body {
     line-height: 21px;
     background-color: #ffffff;
     color: #000000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
 
 .page-header {
     background-color: #ffffff;
     color: #000000;  
 }
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 390px;
+}
+
+.navigation-logo {
+    width: 139px;
+    margin-right: 30px;
+  }
+
+.navigation-user {
+    max-width: 364px;
+    margin-left: auto;
+  }
 
 .navigation-link {
     font-size: 20px;
@@ -43,15 +73,33 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: rgba(117, 97, 87, 1);
 }
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+.main-container {
+    flex-grow: 1;
+  }
 
 .main-index {
     color: #000000;
     background-color: #FFFFFF;
-    background-image: url("../images/index-background.jpg");
+   
+}
+
+.main-header-background {
+    background-image: url("../images/index-background.jpg");  
     background-repeat: no-repeat;
-    background-size: 69% auto;
+    background-size: 100% auto;
 }
 
 .main-header h2 {
@@ -69,6 +117,28 @@ body {
     text-align: center;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-list-item {
+    width: 400px;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-img {
+    width: 800px;
+}
+
+.advantages-item {
+    width: 400px;
+}
+
 .advantages-title {
     font-weight: 700;
     font-size: 24px;
@@ -78,11 +148,39 @@ body {
     
 }
 
-.advantages-item:nth-child(7),
-.advantages-item:first-child
-{
-    background-color: #000000;
+.advantages-background {
+    background: rgba(130, 179, 211, 1);
+    color: #000000;
+}
+
+.advantages-home {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-souvenir {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000; 
+}
+
+.advantages-bridge{
+    background: rgba(130, 179, 211, 1);
     color: #FFFFFF;
+}
+
+.advantages-square {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-road {
+    background: rgba(131, 179, 211, 0.2);
+    color: #000000;
+}
+
+.advantages-tourist {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
 }
 
 .advantages-description {
@@ -94,6 +192,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .search-title {
@@ -111,7 +211,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #000000;
+    background: rgba(117, 97, 87, 1);
 }
 
 .distribution {
@@ -124,6 +224,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .distribution-title {
@@ -140,7 +242,24 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: rgba(130, 179, 211, 1);
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.footer-social-list {
+    width: 116px;
+    margin-right: 52px;
+}
+
+.footer-logo {
+    margin-left: 52px;
+    max-width: 115px;
 }
 
 .contacts-phone {
