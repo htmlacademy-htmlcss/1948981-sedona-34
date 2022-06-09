@@ -124,11 +124,15 @@ body {
     flex-direction: column;
 }
 
+.advantages-item-list {
+    width: 1200px;
+    padding: 0; 
+    margin: 0;
+    display: flex;   
+}
+
 .advantages-list-item {
     width: 400px;
-    display: flex; 
-    margin: 0;
-    padding: 0;
 }
 
 .advantages-img {
@@ -137,6 +141,12 @@ body {
 
 .advantages-item {
     width: 400px;
+}
+
+.advantages-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .advantages-title {
