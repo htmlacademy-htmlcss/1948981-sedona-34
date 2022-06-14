@@ -44,7 +44,13 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
+    margin-left: 30px;
     width: 390px;
+    display: flex;
+}
+
+.navigation-item {
+    width: 390px;  
 }
 
 .navigation-logo {
@@ -52,10 +58,11 @@ body {
     margin-right: 30px;
   }
 
-.navigation-user {
-    max-width: 364px;
-    margin-left: auto;
-  }
+.flex-sup {
+    display: flex;
+    width: 263px;
+    margin-left: 237px;
+}
 
 .navigation-link {
     font-size: 20px;
@@ -74,6 +81,7 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: rgba(117, 97, 87, 1);
+    width: 160px;
 }
 
 .page-container {
@@ -117,11 +125,13 @@ body {
     text-align: center;
 }
 
-.advantages-list {
-    margin: 0;
-    padding: 0;
+.advantages {
+
+}
+
+.advantages-background {
     display: flex;
-    flex-direction: column;
+    width: 1200px;
 }
 
 .advantages-item-list {
@@ -135,12 +145,41 @@ body {
     width: 400px;
 }
 
-.advantages-img {
+.advantages-bridge {
+    display: flex;
+    width: 1200px;
+}
+
+.advantages-item-img {
+    display: flex; 
     width: 800px;
 }
 
-.advantages-item {
+.flex-container {
+    display: flex;
+    width: 1200px;
+}
+
+.advantages-square {
     width: 400px;
+}
+
+.advantages-road {
+    width: 400px; 
+}
+
+.advantages-tourist {
+    width: 400px;
+}
+
+.advantages-description {
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.advantages-title {
+    padding-left: 85px;
+    padding-right: 85px;  
 }
 
 .advantages-icon {
@@ -263,9 +302,17 @@ body {
 }
 
 .footer-social-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
     width: 116px;
-    margin-right: 52px;
+    justify-content: space-between;
 }
+
+.footer-social-item {
+    width: 24px;
+}
+
 
 .footer-logo {
     margin-left: 52px;
