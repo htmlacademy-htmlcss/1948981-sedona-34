@@ -125,9 +125,14 @@ body {
     text-align: center;
 }
 
-.advantages {
-
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
 
 .advantages-background {
     display: flex;
