@@ -1,0 +1,582 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  html {
+    height: 100%;
+  }
+  
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+.page-header {
+    background-color: #ffffff;
+    color: #000000;  
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 60px;
+  }
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    min-width: 390px;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    min-height: 60px;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+    margin: 20px 17px;
+    display: block; 
+}
+
+.navigation-logo {
+  display: flex;
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  margin-left: 70px;
+  min-height: 60px;
+  }
+
+.navigation-user {
+    max-width: 263px;
+    margin: 0;
+    padding: 0;
+    margin-left: 237px;
+    min-height: 60px;
+}
+
+.navigation-user .navigation-item {
+    min-height: 60px;  
+}
+
+.navigation-user  .navigation-link {
+    min-width: 18px;
+    min-height: 18px;
+    padding: 0;
+    margin: 0;
+    margin-right: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+.navigation-item-button { 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(117, 97, 87, 1);
+    min-width: 160px;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: none;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+ }
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 54px;
+    padding-bottom: 82px;
+  }
+
+.main-container {
+    flex-grow: 1;
+  }
+
+.main-index {
+    color: #000000;
+    background-color: #FFFFFF;  
+}
+
+.main-header-background {
+    background-image: url("../images/index-background.jpg");  
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.main-header-advantages {
+    min-height: 282px;
+    margin-top: 63px;
+}
+
+.main-header-advantages h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 620px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header-advantages p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center; 
+    margin: 0;
+    margin-top: 30px;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.advantages-background {
+    display: flex;
+    width: 1200px;
+}
+
+.advantages-item-list {
+    width: 1200px;
+    padding: 0; 
+    margin: 0;
+    display: flex;  
+    list-style-type: none; 
+}
+
+.advantages-list-item {
+    width: 400px;
+}
+
+.advantages-bridge {
+    display: flex;
+    width: 1200px;
+}
+
+.advantages-bridge-flex {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 91px; 
+}
+
+.advantages-bridge-flex .advantages-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.advantages-bridge-flex span {
+    margin-bottom: 30px;
+}
+
+.advantages-item-img {
+    display: flex; 
+    width: 800px;
+}
+
+.flex-container {
+    display: flex;
+    width: 1200px;
+}
+
+.advantages-square {  
+    width: 400px;
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-square .advantages-title {
+    margin-top: 103px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+.advantages-square .advantages-description {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0;
+}
+
+.advantages-square span {
+    margin-bottom: 30px;
+}
+
+.advantages-road {
+    width: 400px; 
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-road .advantages-title { 
+    margin-top: 103px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.advantages-road .advantages-description {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0;
+}
+
+.advantages-road span {
+    margin-bottom: 30px;
+}
+
+.advantages-tourist {
+    width: 400px;
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-tourist .advantages-title {
+    margin-top: 103px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 150px;
+}
+
+.advantages-tourist p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 250px;
+}
+
+.advantages-tourist span {
+    margin-bottom: 30px;
+}
+
+.advantages-background-flex {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.advantages-background-flex .advantages-title {
+    width: 230px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 92px;
+    margin-bottom: 30px;
+}
+
+.advantages-background-flex p {
+    width: 250px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.advantages-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 384px;
+}
+
+.advantages-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.advantages-list-item .advantages-title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.advantages-list-item .advantages-description {
+    margin: 0;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.advantages-background {
+    background: rgba(130, 179, 211, 1);
+    color: #000000;
+}
+
+.advantages-home {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-souvenir {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000; 
+}
+
+.advantages-bridge{
+    background: rgba(130, 179, 211, 1);
+    color: #FFFFFF;
+}
+
+.advantages-square {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-road {
+    background: rgba(131, 179, 211, 0.2);
+    color: #000000;
+}
+
+.advantages-tourist {
+    background: rgba(131, 179, 211, 0.12);
+    color: #000000;
+}
+
+.advantages-description {
+    text-align: center;
+}
+
+.search {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 417px;
+}
+
+.search-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 91px;
+    padding-bottom: 34px;
+}
+
+.search-title-button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: rgba(117, 97, 87, 1);
+    margin-bottom: 102px;
+    border: none;
+    width: 574px;
+    height: 60px;
+    border-radius: 4px;
+    margin-top: 56px;
+}
+
+.search p {
+    padding: 0;
+    margin: 0;
+}
+
+.distribution {
+    color: #FFFFFF;
+    background-color: #000000;
+    background-image: url("../images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 411px;
+}
+
+.distribution-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-top: 94px;
+    margin: 0;
+}
+
+.distribution p {
+    width: 475px;
+    padding-top: 29px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.distribution-form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+    padding-top: 46px;
+}
+
+.distribution-field {
+    width: 600px;
+    height: 60px;
+    padding-left: 20px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0;
+    padding-right: 0;
+    justify-content: center;
+    border: none;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.distribution-button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(130, 179, 211, 1);
+    width: 200px;
+    height: 62px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 120px;
+}
+
+.foooter {
+    min-height: 50px;
+    min-width: 116px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: 72px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-social-item {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 26px;  
+    min-height: 17px;
+}
+
+.footer-social-item:last-child {
+    margin-right: 0px;  
+}
+
+.footer-logo {
+    margin-left: auto;
+    max-width: 115px;
+    margin-top: 44px;
+    margin-right: 72px;
+}
+
+.footer-address {
+    margin-left: 52px;
+    margin-top: 45px;
+    min-height: 50px;
+}
+
+.contacts-phone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    min-width: 720px;
+    display: block;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
