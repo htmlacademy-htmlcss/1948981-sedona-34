@@ -33,13 +33,14 @@ body {
 .page-header {
     background-color: #ffffff;
     color: #000000;  
+    height: 65px;
 }
 
 .navigation {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-    min-height: 60px;
+    height: 70px;
   }
 
 .navigation-list {
@@ -50,7 +51,6 @@ body {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
-    min-height: 60px;
 }
 
 .navigation-link {
@@ -70,19 +70,14 @@ body {
   padding: 0;
   margin: 0;
   margin-left: 70px;
-  min-height: 60px;
   }
 
 .navigation-user {
-    max-width: 263px;
+    min-width: 263px;
     margin: 0;
     padding: 0;
-    margin-left: 237px;
-    min-height: 60px;
-}
-
-.navigation-user .navigation-item {
-    min-height: 60px;  
+    margin-left: auto;
+    margin-right: 70px;
 }
 
 .navigation-user  .navigation-link {
@@ -94,6 +89,15 @@ body {
     margin-top: auto;
     margin-bottom: auto;
   }
+
+.navigation-link-current:before {
+    position: absolute;
+    top: 61px;
+    height: 0px;
+    width: 68px;
+    border: 2px solid #756257;
+    content: "";
+}
 
 
 .navigation-item-button { 
@@ -111,6 +115,20 @@ body {
     width: 160px;
     height: 37px;
     border-radius: 4px;
+    padding-top: 4px;
+ }
+
+ .navigation-item-button:hover {
+    background-color: rgba(97, 80, 72, 1);
+ }
+
+ .navigation-item-button:focus {
+    background-color: rgba(97, 80, 72, 1);
+ }
+
+ .navigation-item-button:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
  }
 
 .page-container {
@@ -121,17 +139,22 @@ body {
   .logo {
     display: block;
     margin: 0 auto;
-    padding-top: 54px;
+    padding-top: 51px;
     padding-bottom: 82px;
   }
 
 .main-container {
-    flex-grow: 1;
+    flex: 1 0 auto;
   }
 
 .main-index {
     color: #000000;
     background-color: #FFFFFF;  
+    min-width: 1200px;
+}
+
+.main-header {
+    min-width: 1200px;
 }
 
 .main-header-background {
@@ -172,15 +195,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    min-width: 1200px;
 }
 
 .advantages-background {
     display: flex;
-    width: 1200px;
+    min-width: 1200px;
 }
 
 .advantages-item-list {
-    width: 1200px;
+    min-width: 1200px;
     padding: 0; 
     margin: 0;
     display: flex;  
@@ -188,18 +212,20 @@ body {
 }
 
 .advantages-list-item {
-    width: 400px;
+    min-width: 400px;
 }
 
 .advantages-bridge {
     display: flex;
-    width: 1200px;
+    min-width: 1200px;
 }
 
 .advantages-bridge-flex {
     display: flex;
     flex-direction: column; 
     margin-top: 91px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .advantages-bridge-flex .advantages-title {
@@ -301,6 +327,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
+    color: #ffffff;
 }
 
 .advantages-background-flex .advantages-title {
@@ -412,7 +439,8 @@ body {
     text-transform: uppercase;
     margin: 0;
     padding-top: 91px;
-    padding-bottom: 34px;
+    padding-bottom: 29px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .search-title-button {
@@ -423,13 +451,26 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     background: rgba(117, 97, 87, 1);
-    margin-bottom: 102px;
+    margin-bottom: 93px;
     border: none;
     width: 574px;
     height: 60px;
     border-radius: 4px;
     margin-top: 56px;
 }
+
+.search-title-button:hover {
+    background-color: rgba(97, 80, 72, 1);
+ }
+
+.search-title-button:focus {
+    background-color: rgba(97, 80, 72, 1);
+ }
+
+.search-title-button:active {
+    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
+ }
 
 .search p {
     padding: 0;
@@ -471,7 +512,7 @@ body {
 .distribution-form {
     display: flex;
     justify-content: center;
-    padding-bottom: 94px;
+    padding-bottom: 92px;
     padding-top: 46px;
 }
 
@@ -505,6 +546,22 @@ body {
     border-radius: 0px 10px 10px 0px;
 }
 
+.distribution-button:hover {
+    background-color: rgba(104, 162, 202, 1);
+ }
+
+ .distribution-button:focus {
+    background-color: rgba(104, 162, 202, 1);
+ }
+
+.distribution-button:active {
+    background-color: rgba(130, 179, 211, 1);
+    color: rgba(255, 255, 255, 0.3);
+ }
+
+.page-footer {
+    flex-shrink: 0;
+}
 
 .page-footer-container {
     display: flex;
@@ -544,12 +601,37 @@ body {
     margin-right: 0px;  
 }
 
+.button:hover .button-icon path{
+    fill: #68A2CA;
+}
+
+.button:focus .button-icon path{
+    fill: #68A2CA;
+}
+
+.button:active .button-icon path{
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-logo {
     margin-left: auto;
     max-width: 115px;
     margin-top: 44px;
     margin-right: 72px;
 }
+
+.footer-logo:hover .footer-contacts-logo path {
+    fill: #756157;
+}
+
+.footer-logo:focus .footer-contacts-logo path {
+    fill: #756157;
+}
+
+.footer-logo:active .footer-contacts-logo path {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
 
 .footer-address {
     margin-left: 52px;
@@ -569,6 +651,18 @@ body {
     display: block;
 
 }
+
+.contacts-phone:hover {
+    color: rgba(117, 97, 87, 1);
+ }
+
+.contacts-phone:focus {
+    color: rgba(117, 97, 87, 1);
+ }
+
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+ }
 
 .visually-hidden {
     position: absolute;
