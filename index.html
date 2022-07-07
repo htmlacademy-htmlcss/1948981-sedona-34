@@ -159,5 +159,46 @@
       </div>
     </footer>
   </div>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button"> 
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <label  for="arrival-date" class="arrival-date dates">Дата заезда:</label>
+            <input class="auth-form-field field" type="text" id="arrival-date" value="27 апреля 2020">
+            <span class="arrival-date-error">Мы не можем отправить вас в прошлое.</span>
+            <button class="calendar-svg"> 
+              <span class="visually-hidden">Календарь</span>
+            </button>
+          </div>
+          <div class="field-group">
+            <label for="departure" class="departure dates">Дата выезда:</label>
+            <input class="auth-form-field field" type="text" id="departure" value="1 сентября 2021">
+            <span class="departure-error">На эти даты есть свободные номера. Пока есть.</span>
+            <button class="calendar-svg">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+          </div>
+          <div class="modal-group-people">
+          <div class="field-group-people">
+            <label  for="adults-people" class="adults-people">Взрослые:</label>
+            <input  type="text" id="adults-people" class="rectangle" value="2">
+          </div> 
+          <div class="field-group-people field-group-child">
+            <label  for="children-people" class="adults-people adults-child">Дети:</label>
+            <input  type="text" id="children-people" class="rectangle" value="1">
+          </div> 
+        </div>
+        <button class="modal-button">
+          <span class="modal-search">Найти</span>
+        </button>
+        </form>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
